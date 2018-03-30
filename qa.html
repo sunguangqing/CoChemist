@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">    
+    <meta name="applicable-device" content="pc,mobile" />
+    <!-- 移动端 浏览器中页面将以原始大小显示，不允许缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- iphone会把一串数字识别为电话号码，点击的时候会提示是否呼叫，屏蔽这功能则把telephone设置为no -->
+    <meta content="telephone=no" name="format-detection" />
+    <!-- 全屏显示 -->
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- 屏蔽百度转码 -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="description" content="Cochemist">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cochemist</title>
+    <link rel="icon " type="images/x-icon" href="images/favicon.ico">
+
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/yitusite.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- 顶部   -->
+    <div class="hd_top">
+      <div class="container">
+        <div class="row">
+            <div class="hd_logo col-xs-6"><a href="index.html"><img src="images/logo.png" /></a></div>
+            <div class="hd_login col-xs-6">
+                <a class="hd_reg" href="register.html">Register</a><a class="hd_log" href="login.html">Login</a>
+            </div>
+        </div>
+        <div class="hd_nav">
+            <div class="row">
+                <div class="hd_navbtn col-md-7 col-xs-2">
+                    <button type="button" class="navbar-toggle collapsed si si-list fa-2x" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"></button>
+                    <div class="hd_navbox collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="hd_navlist">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="chemical.html">CHEMICAL</a></li>
+                            <li><a href="chemists.html">CHEMISTS</a></li>
+                            <li><a class="on" href="qa.html">Q&A</a></li>
+                            <li><a href="user.html">USER CENTER</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-10 hd_searchbox">
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-offset-3 col-sm-3 col-md-offset-0 col-md-4">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    please select <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                <li><a href="#">Chemical</a></li>
+                                <li><a href="#">Chemists</a></li>
+                                <li><a href="#">Reference</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 搜索框 -->
+                        <div class="col-xs-5 col-sm-4 col-md-6">
+                            <div class="hd_search">
+                                <input type="text" placeholder="Search..."/>
+                                <span class="cursor si si-magnifier"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-2">
+                            <div class="hd_searchright">
+                            <span>Structured</span><span>search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="qa_center">
+        <div class="user_main main container">
+            <div class="row qam_caption userm_caption">
+                <div class="usermc_left col-sm-3 col-xs-2"><h3 class="xs_hidden">ABOUT</h3><h3 class="lg_hidden"><i class="si si-list"></i></h3></div>
+                <div class="usermc_right col-sm-9 col-xs-10"><h3 class="qa_title">Q&A</h3></div>
+            </div>
+            <div class="row qam_content userm_content">
+                <div class="col-xs-3 usercc_left">
+                    <ul class="nav qa_tabbtn nav-tabs user_nav" role="tablist">
+                        <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">ABOUT US</a></li>
+                        <li class="active" role="presentation"><a href="#qa" aria-controls="aboutus" role="tab" data-toggle="tab">Q&A</a></li>
+                        <li role="presentation"><a href="#termsconditions" aria-controls="aboutus" role="tab" data-toggle="tab">TERMS & CONDITIONS</a></li>
+                        <li role="presentation"><a href="#contactus" aria-controls="aboutus" role="tab" data-toggle="tab">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="tab-content qa_right usermc_right usercc_right col-md-9">
+                    <div role="tabpanel" class="tab-pane" id="aboutus">
+                        <p>
+                            <strong>1) CoChemist</strong> 是一个全球化学家交流自身成果的平台。<br />
+                            <strong>起源：</strong>CoChemist 的创建起源于下面这个问题：化学研究者为什么要花费大量时间用于重复合成他人已报道的合成工作？这样的工作即困难又没有意义。<br />
+                        </p>   
+                        <p>                     
+                            主要是因为大部分前沿报道中的化合物在试剂公司无法购买或者价格过高且质量不一定得到保证。<br />
+                            为什么不能尝试从其他课题组直接获得别人已有的化合物呢？已有一些领先的试剂公司这样操作，他们从一些课题组购买然后以高达10倍的差价出售。这即减少了原创者应得的利益，而且高价也阻碍了研究者产品的推广。<br />
+                            <strong>目标：</strong>CoChemist的目的在于加速化学家之间的化合物流动，减少不必要的重复合成工作，鼓励和保护原创性产品。在CoChemist上分享您的原创性化合物，您将得到售价中的绝大部分金额（除去税和物流费用外）;甚至不用您亲自合成或提供产品，您也有机会得到产品售价分成。（具体方法请见Q&A）<br />
+                        </p>
+                        <p>
+                            <strong>2) CoChemist</strong> 的业务范围：<br /> <br />
+                            <strong>产品：</strong>CoChemist专注于小量、前沿、科研导向的化学品；目前不支持大额大量的化合物询价和交易；对于专利产品较大规模的需求，CoChemist将和专利持有者联系，在取得书面授权后再进行合作。<br /><br />
+                            <strong>目标群体：</strong>目标人群为全球各大化学相关科研机构
+                        </p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane qa_tabqa active" id="qa">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#zyhqsy" aria-expanded="true" aria-controls="collapseOne">怎样获取收益<i class="pull-right fa fa-lg fa-angle-right"></i></a>                                        
+                                    </h4>
+                                </div>
+                                <div id="zyhqsy" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <p></p>
+                                        <p>您在CoChemist可能获得以下两种收益：</p>
+                                        <ul>
+                                            <li>CoChemist可能会向您询问您合成过产品，您可以按照一定价格出售</li> 
+                                            <li>CoChemist出售您的专利或原创产品（认证后），您无需提供实际产品可以获得一定比例的额外收益，作为对您原创性工作的补偿和支持。</li>
+                                        </ul>
+                                        <p>CoChemist将会按照双方商议的方式付款（主要包括以下几种）：</p>
+                                        <ul>
+                                            <li>直接汇入您指定的对公（要求发票）或对私账户</li> 
+                                            <li>为您在主流试剂公司开通预付费账户，并向账户中充值</li> 
+                                            <li>为您计入CoChemist的账户中，您可在之后用于在CoChemist及合作试剂公司购买产品</li>
+                                        </ul>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#rhhqzlbh" aria-expanded="false" aria-controls="collapseTwo">如何获取原创和专利保护<i class="pull-right fa fa-lg fa-angle-right"></i></a>
+                                    </h4>
+                                </div>
+                                <div id="rhhqzlbh" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                         <p>
+                                            <strong>专利化合物保护：</strong><br />
+                                            <i></i>您可以直接发送您的专利或者专利号（授权号）以及相关产品给我们，经过我们编辑核实后，将会为您在该化合物上标记专利特权；之后可以申请在CoChemist平台上只有您有权供应该化合物；<span>对于CoChemist平台上交流的产品您将得到税后10-20%的收益。</span><br />
+                                            <i></i>CoChemist未经许可的不会对您的专利产品放大生产/工业化生产并获取收益； <br /><br />
+                                            <strong>原创化合物保护：</strong><br />
+                                            <i></i> 对于您的原创产品（无需专利，但是可经文献验证由您首先报道的），请发送化合物的结构、合成路线、HNMR、CNMR等检测文档或者直接发送拥有上述全部信息的文献全文（包括support info）给我们；经过我们验证后，将会为您在该化合物上标记原创特权，可以优先供应该产品并且享有额外收益。<br /><br />
+                                            <i></i>会员对于申请原创性保护的产品，可以申请查看该化合物的浏览、咨询和需求记录信息；CoChemist也将定期发送上述内容的总结报告给专利/原创授权用户<br />
+                                         </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#rhjxxxbj" aria-expanded="false" aria-controls="collapseThree">如何进行注册、登陆和信息编辑<i class="pull-right fa fa-lg fa-angle-right"></i></a>
+                                    </h4>
+                                </div>
+                                <div id="rhjxxxbj" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <p>
+                                            <strong>注册和登录：</strong> 用户直接通过邮箱进行注册和登陆；强烈建议用户使用单位邮箱进行注册（尤其是用于publication的邮箱）；如果您平时不常使用单位邮箱，您可以同时添加一个常用邮箱地址作为辅助邮箱用于接收信息。 
+                                        </p>
+                                        <i></i>可能向您的邮箱推送邮件，内容包括：<br />
+                                        <ul>
+                                            <li>CoChemist向您咨询产品</li> 
+                                            <li>有其他研究者对您的产品感兴趣</li>
+                                            <li>您咨询的产品收到了回复</li>
+                                        </ul>
+                                        <p>
+                                             <strong>个人信息编辑：</strong> CoChemist对于部分用户已经预先设置了部分信息（可能包括邮箱、单位、地址、tittle和部分学科方向）；如果和您的实际信息不符可以登录后台直接修改，如果出现不能修改的情况请直接联系我们进行后台修改（邮箱info@cochemist.com)<br />
+                                             <i></i>CoChemist可能从您的公开网页上收集了部分照片，您可以后台修改，如果您不愿意显示您的照片可以删除或者联系我们删除。<br /> 
+                                             <i></i>说明：收集的用户信息全部来自于公开网页或资料；您的联系方式不会完整的显示在CoChemist的公开页面上，如有发现请及时联系我们，以防止给您带来不便。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#zyfxzjdcp" aria-expanded="false" aria-controls="collapseThree">怎样分享自己的产品<i class="pull-right fa fa-lg fa-angle-right"></i></a>
+                                    </h4>
+                                </div>
+                                <div id="zyfxzjdcp" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <p>
+                                            <i></i>CoChemist的专业编辑可能预先通过文献查找筛选了您的部分化合物在您的后台页面，您可以直接登录后查看；对于不是您的化合物删除即可。<br /> 
+                                            <i></i>您可以在添加化合物页面单独编辑或新增化合物<br /> 
+                                            <i></i>您可以直接上传其它文件格式，比如chemdraw文件（您可以将您的多个化合物编辑在一个chemdraw文件中；包含化合物图片的word或其它格式文件； mol文件/sdf文件等），我们的编辑将会人工为您在后台添加。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="termsconditions">
+                        <strong>1) 个人信息和隐私保护：</strong><br /> 
+                        在CoChemist上，对于某一用户公开的信息包括且仅包括：<br />
+                        <ul>
+                            <li>该用户的公开照片和个人主页</li> 
+                            <li>该用户的单位、tittle、研究领域</li> 
+                            <li>该用户曾经报道或上传过的化合物</li>
+                            <li>该用户对某化合物的兴趣及需求（仅会透露及转发至可能提供该化合物的小部分其它用户，该用户可以申请匿名咨询，在这种情况下提供该化合物的用户也无法看到申请人的信息）</li>
+                        </ul>
+                        <p></p>
+                        CoChemist 严格保护以下信息：<br /> 
+                        <ul>
+                            <li>用户的账户和密码</li>
+                            <li>用户的操作</li> 
+                            <li>用户和CoChemist的交流沟通</li> 
+                            <li>用户申请删除或者撤销的相关信息</li>
+                        </ul>
+                        <p></p>
+                        <strong>2) 网站信息来源与免责条款：</strong><br />
+                        网站收集的个人全部来源于公开网页（包括研究者的公开主页和高校介绍页面）<br />
+                        网站收集的文献信息全部来源于公开网页（包括各大学术网站的公开页面、各类学术网站的页面）以及用户上传信息<br />
+                        网站收集的用户化合物信息来源于以下几种方式：<br />
+                        <ul>
+                            <li>公开网页信息</li>
+                            <li>用户上传</li> 
+                            <li>CoChemist的专职编辑以及兼职编辑通过其专业知识和渠道归纳总结</li>
+                            <li>通过参加公开学术会议及活动获取的资料</li>
+                            <li>其它各类合法信息</li> 
+                            <li>公开文献资料（如专利等）</li> 
+                        </ul>
+                        <p></p>
+                        如果您发现CoChemist上的上述信息有侵犯您受保护版权的情况，请及时联系我们（info@cochemist.com），经过核实后我们将删除收到版权保护的信息。
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="contactus">
+                        <strong>个人信息：</strong><br />
+                        <i></i>对于以下情况，请邮件info@cochemist.com 或QQ: 77168460；<br /><br />
+                        <ul>
+                            <li>网站登载了不属于您的化合物或者错误的化合物；</li> 
+                            <li>网站关于您的其他信息有误</li> 
+                            <li>您不希望您的信息或化合物被登载在本网站上</li> 
+                            <li>网站对您的专利产品有侵权的嫌疑（比如商业化供应您的专利化合物）</li>
+                            <li>如果您对CoChemist的其他任何建议或者投诉</li>
+                        </ul>
+                        <strong>合作和推广</strong><br />
+                        <i></i>对于以下各类合作或推广，请邮件service01@cochemist.com 或QQ: 77168460<br /><br /> 
+                        <ul>
+                            <li>您希望通过网站采购或推广某个产品</li>
+                            <li>你希望在CoChemist上投放广告</li> 
+                            <li>其它各类合作和服务</li>
+                        </ul> 
+                        <strong>其它各类问题</strong><br />
+                        <i></i>常见问题请参见Q&A，或邮件联系info@cochemist.com 或QQ: 77168460
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12 footer_nav">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">Q&A</a></li>
+                        <li><a href="#">TERMS</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xs-12 copyright">
+                    <span>@ 2016-2017 www.cochemist.com ALL Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 弹框 -->
+    <div id="addEmailBox" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal_addemail" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close"><span class="si si-close" aria-hidden="true"></span></button>
+                    <h4 class="modal-title">Error</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Cannot Add More Than 5 E-mails!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn close_btn" data-dismiss="modal"><i class="fa fa-check"></i> OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

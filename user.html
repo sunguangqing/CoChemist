@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">    
+    <meta name="applicable-device" content="pc,mobile" />
+    <!-- 移动端 浏览器中页面将以原始大小显示，不允许缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- iphone会把一串数字识别为电话号码，点击的时候会提示是否呼叫，屏蔽这功能则把telephone设置为no -->
+    <meta content="telephone=no" name="format-detection" />
+    <!-- iphone的私有标签，默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明） -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- iphone设备的是有标签 允许全屏模式浏览，隐藏浏览器导航栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <!-- 全屏显示 -->
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- 屏蔽百度转码 -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="description" content="Cochemist">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cochemist</title>
+    <link rel="icon " type="images/x-icon" href="images/favicon.ico">
+
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/yitusite.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- 顶部   -->
+    <div class="hd_top">
+      <div class="container">
+          <div class="row">
+            <div class="hd_logo col-xs-6"><a href="index.html"><img src="images/logo.png" /></a></div>
+            <div class="hd_usercenter col-xs-6">
+                <div class="btn-group">
+                    <button type="button" class="hd_usercenter_btn btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/photo.jpg" /><span class="hd_userc_name">79228589@qq.com</span><span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">USER CENTER</a></li>
+                        <li><a href="#">Message<span class="message_badge badge">3</span></a></li>
+                        <li><a href="#">Inquiries<span class="inquiries_badge badge">1</span></a></li>
+                        <li><a href="#">LOG OUT</a></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <div class="hd_nav">
+            <div class="row">
+              <div class="hd_navbtn col-md-7 col-xs-2">
+                <button type="button" class="navbar-toggle collapsed si si-list fa-2x" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"></button>
+                <div class="hd_navbox collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="hd_navlist">
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="chemical.html">CHEMICAL</a></li>
+                      <li><a href="chemists.html">CHEMISTS</a></li>
+                      <li><a href="qa.html">Q&A</a></li>
+                      <li><a class="on" href="user.html">USER CENTER</a></li>
+                    </ul>
+                </div>
+              </div>
+              <div class="col-md-5 col-xs-10 hd_searchbox">
+                  <div class="row">
+                    <div class="col-xs-4 col-sm-offset-3 col-sm-3 col-md-offset-0 col-md-4">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              please select <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Chemical</a></li>
+                            <li><a href="#">Chemists</a></li>
+                            <li><a href="#">Reference</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <!-- 搜索框 -->
+                    <div class="col-xs-5 col-sm-4 col-md-6">
+                      <div class="hd_search">
+                          <input type="text" placeholder="Search..."/>
+                          <span class="cursor si si-magnifier"></span>
+                      </div>
+                    </div>
+                    <div class="col-xs-3 col-sm-2">
+                      <div class="hd_searchright">
+                        <span>Structured</span><span>search</span>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="user_center">
+        <div class="user_main main container">
+            <div class="row userm_caption">
+                <div class="usermc_left col-sm-3 col-xs-2"><h3 class="xs_hidden">USER CENTER</h3><h3 class="lg_hidden"><i class="si si-list"></i></h3></div>
+                <div class="usermc_right col-sm-9 col-xs-10"><h3>Basic infomation</h3></div>
+            </div>
+            <div class="row userm_content">
+                <div class="col-xs-3 usercc_left">
+                    <ul class="user_nav">
+                        <li><a class="active" href="javascript:;">Basic Information</a></li>
+                        <li><a href="javascript:;">Related Chemists</a></li>
+                        <li><a href="javascript:;">My Topics</a></li>
+                        <li><a href="javascript:;">My Chemicals</a></li>
+                        <li><a href="javascript:;">Inquiries</a></li>
+                        <li><a href="javascript:;">My Message</a></li>
+                        <li><a href="javascript:;">Favorite</a></li>
+                        <li><a href="javascript:;">Settings</a></li>
+                        <li><a href="javascript:;">Payment Account</a></li>
+                    </ul>
+                </div>
+                <div class="usermc_right usercc_right col-md-9">
+                    <div class="usermr_content">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="userc_photo">
+                                    <img src="images/photo.jpg" />
+                                </div>
+                                <div class="userc_phototext">Add your penrsonal photos or typical chemicals</div>
+                            </div>
+                            <div class="col-md-8">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="firstname" class="col-sm-3 col-xs-4 control-label"><span class="required">*</span> FIRST NAME</label>
+                                        <div class="col-sm-9 col-xs-8">
+                                            <input type="text" class="form-control" id="firstname" placeholder="input your first name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastname" class="col-sm-3 col-xs-4 control-label"><span class="required">*</span> LAST NAME</label>
+                                        <div class="col-sm-9 col-xs-8">
+                                            <input type="text" class="form-control" id="lastname" placeholder="input your last name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nativename" class="col-sm-3 col-xs-4 control-label">NATIVE NAME</label>
+                                        <div class="col-sm-9 col-xs-8">
+                                            <input type="text" class="form-control" id="nativename" placeholder="e.g. 李明, Thomas Müller, 김정희">
+                                        </div>
+                                    </div>
+                                    <div class="form-group addemail">
+                                        <label class="col-sm-3 col-xs-4 control-label"><span class="required">*</span> MAIL <i tabindex="1" class="si si-question popoverone" role="button" data-placement="right" data-toggle="popover" data-trigger="focus" data-content="建议您使用您的单位邮箱（如 以.edu.cn结尾）以享有更多的使用权限和功能"></i></label>
+                                        <div class="col-sm-9 col-xs-8 useremailaddbox">
+                                            <input type="email" class="form-control" id="mail" placeholder=".....">
+                                            <div class="useremailadd"><i class="fa fa-plus"></i><i tabindex="2" class="si si-question popovertwo" role="button" data-placement="bottom" data-toggle="popover" data-trigger="focus" data-content="如果您不经常使用您的单位邮箱，您可以选择添加一个其他的常用邮箱"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ORGANIZATIONS" class="col-sm-3 col-xs-4 control-label"><span class="required">*</span>ORGANIZATIONS</label>
+                                        <div class="col-sm-9 col-xs-8">
+                                            <input type="text" class="form-control" id="ORGANIZATIONS" placeholder=".....">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="TITTLE" class="col-sm-3 col-xs-4 control-label"><span class="required">*</span> TITTLE</label>
+                                        <div class="col-sm-9 col-xs-8 user_select">
+                                            <select class="form-control" id="txt_tittle">
+                                                <option value="Professor" selected="selected">Professor</option>
+                                                <option value="Associate Professor">Associate Professor</option>
+                                                <option value="Assistant Professor">Assistant Professor</option>
+                                                <option value="Lecturer">Lecturer</option>
+                                                <option value="Research Fellow">Research Fellow</option>
+                                                <option value="Post Doctor">Post Doctor</option>
+                                                <option value="Graduate Student">Graduate Student</option>
+                                                <option value="Colleage Student">Colleage Student</option>
+                                                <option value="Independent Researcher">Independent Researcher</option>
+                                                <option>None</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="DEGREE" class="col-sm-3 col-xs-4 control-label"><span class="required">*</span> DEGREE</label>
+                                        <div class="col-sm-9 col-xs-8 user_select">
+                                            <select class="form-control" id="txt_degree">
+                                                <option value="PhD" selected="selected">PhD</option>
+                                                <option value="PhD Candidate">PhD Candidate</option>
+                                                <option value="Master">Master</option>
+                                                <option value="Master Candidate">Master Candidate</option>
+                                                <option value="Bachelor">Bachelor</option>
+                                                <option value="None">None</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="CONTACT" class="col-sm-3 col-xs-4 control-label">CONTACT</label>
+                                        <div class="col-sm-9 col-xs-8">
+                                            <input type="text" class="form-control" id="CONTACT" placeholder=".....">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="LINK" class="col-sm-3 col-xs-4 control-label">LINK</label>
+                                        <div class="col-sm-9 col-xs-8">
+                                            <input type="text" class="form-control" id="LINK" placeholder=".....">
+                                        </div>
+                                    </div>
+                                    <div class="form-group formgrop_btn">
+                                      <div class="col-sm-3 col-xs-4"></div>
+                                      <div class="col-sm-9 col-xs-8">
+                                        <button type="submit" class="btn fa fa-check"> OK</button>
+                                      </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12 footer_nav">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">Q&A</a></li>
+                        <li><a href="#">TERMS</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xs-12 copyright">
+                    <span>@ 2016-2017 www.cochemist.com ALL Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 弹框 -->
+    <div id="addEmailBox" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal_addemail" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close"><span class="si si-close" aria-hidden="true"></span></button>
+                    <h4 class="modal-title">Error</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Cannot Add More Than 5 E-mails!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn close_btn" data-dismiss="modal"><i class="fa fa-check"></i> OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
